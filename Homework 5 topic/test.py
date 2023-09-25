@@ -29,26 +29,25 @@
 # 5 -> Вы ввели положительное целое число: 5
 # -.777> Вы ввели отрицательное дробное число: -0.777
 # 5.4r -> Вы ввели не корректное число: 5.4г'''
-#
-# def func(number):
-#     if number.isdigit():
-#         print(f'''вы ввели положительное целое число:{int(number)}''')
-#     elif number.startswith('-') and number[1:].isdigit() :
-#         print(f'''Вы ввели отрицательное целое число:{(number)}''')
-#     elif '.' in number:
-#          if number.count('.') == 1 and not (number.startswith('.') or number.endswith('.')):
-#              if number.startswith('-'):
-#                 print(f'''Вы ввели отрицательное дробное число: {number}''')
-#              else:
-#                 print(f'''Вы ввели положительное дробное число: {number}''')
-#          else:
-#              print(f'''Вы ввели не корректное число: {number}''')
-#     else:
-#         print(f'''Вы ввели не корректное число: {number}''')
-#
-#
-#
-#
-#
-# func(a)
-# print(type(func(a)))
+
+def func(number):
+    if number.isdigit():
+        print(f'''вы ввели положительное целое число:{int(number)}''')
+    elif number.startswith('-') and number[1:].isdigit() :
+        print(f'''Вы ввели отрицательное целое число:{(number)}''')
+    elif '.' in number:
+         if number.count('.') == 1 and not (number.startswith('.') or number.endswith('.')):
+             if number.startswith('-'):
+                print(f'''Вы ввели отрицательное дробное число: {number}''')
+             else:
+                print(f'''Вы ввели положительное дробное число: {number}''')
+         else:
+             print(f'''Вы ввели не корректное число: {number}''')
+    else:
+        print(f'''Вы ввели не корректное число: {number}''')
+
+
+
+
+a = input()
+func(a)
