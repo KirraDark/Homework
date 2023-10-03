@@ -101,30 +101,30 @@
 
 
 
-# '''5. *Прочитать сохранённый csv-файл и сохранить данные в excel-файл,
-#  кроме возраста - столбец с этими данными не нужен. '''
-#
-# import pandas as pd
-#
-# # Путь к файлу CSV
-# csv_file = '/home/user/Загрузки/Higher School of Librarians_csv.csv'
-#
-# # Чтение CSV-файла и создание DataFrame
-# df = pd.read_csv(csv_file, encoding='utf-8')
-#
-# # Удаление столбца 'age'
-# df.drop(columns='age', inplace=True)
-#
-# # Транспонирование DataFrame и изменение имен столбцов
-# df = df.T.rename(columns={i: f'person {i + 1}' for i in range(6)})
-# # T: Это превращает строки в столбцы и столбцы в строки,
-#
-#
-#
-# # Путь для сохранения Excel-файла
-# create_excel_file_main = '/home/user/Загрузки/Higher School of Librarians_excel.xlsx'
-# create_excel_file_pycharm = 'Higher School of Librarians_excel.xlsx'
-#
-# # Сохранение данных в Excel-файлы
-# df.to_excel(create_excel_file_main, index=True)
-# df.to_excel(create_excel_file_pycharm, index=True)
+'''5. *Прочитать сохранённый csv-файл и сохранить данные в excel-файл,
+ кроме возраста - столбец с этими данными не нужен. '''
+
+import pandas as pd
+
+# Путь к файлу CSV
+csv_file = '/home/user/Загрузки/Higher School of Librarians_csv.csv'
+
+# Чтение CSV-файла и создание DataFrame
+df = pd.read_csv(csv_file, encoding='utf-8')
+
+# Удаление столбца 'age'
+df.drop(columns='age', inplace=True)
+
+# Транспонирование DataFrame и изменение имен столбцов
+df = df.T.rename(columns={i: f'person {i + 1}' for i in range(6)})
+# T: Это превращает строки в столбцы и столбцы в строки,
+
+
+
+# Путь для сохранения Excel-файла
+create_excel_file_main = '/home/user/Загрузки/Higher School of Librarians_excel.xlsx'
+create_excel_file_pycharm = 'Higher School of Librarians_excel.xlsx'
+
+# Сохранение данных в Excel-файлы
+df.to_excel(create_excel_file_main, index=True)
+df.to_excel(create_excel_file_pycharm, index=True)
