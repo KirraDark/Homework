@@ -1,0 +1,15 @@
+body {
+    background: red;
+}
+
+body.about {
+    background: green;
+}
+
+body.user {
+    background: blue;
+}
+
+body.life {
+    background: yellow;
+}
