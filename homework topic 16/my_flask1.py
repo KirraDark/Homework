@@ -22,6 +22,11 @@ def user():
 def life():
     return render_template('life.html')
 
+@app.route('/apple')
+def apple():
+    return render_template('fqfqw.html')
+
+
 
 
 app.run(port=8080)
